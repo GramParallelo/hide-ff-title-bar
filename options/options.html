@@ -16,8 +16,21 @@
   <link rel="stylesheet" href="chrome://browser/content/extension.css" />
 </head>
 <body>
-  <form>
-    <label>Hide title bar when:</label>
+  <h2>
+    **Python Script**
+  </h2>
+  <button style="color: red;" id="install">Click here for install directions</button>
+  <p>
+    The above button will take you to an install page with directions on how to install the Python script (a native helper) 
+    which is needed for the Hide-Title-Bar addon to work.
+  </p>
+  
+  
+  <form style="border-top: 1px solid black; padding-top: 10px;">
+    <h2>
+      Options:
+    </h2>
+    <label> Hide title bar </label>
     <select required="true">
       <option value="always">Always</option>
       <!--      <option value="maxonly">Maximized</option> -->
@@ -27,10 +40,6 @@
 
   <p id="error" class="error hidden">
   Error
-  </p>
-
-  <p>
-  You'll need to have installed the native helper (a Python script) before the above will work. <button id="install">Go to install page</button>
   </p>
 
   <script src="options.js"></script>
